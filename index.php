@@ -31,10 +31,23 @@ $search = Usuario::search("jo");
 echo json_encode($search);
 */
 
+/*
 //Carrega o usuario usando o login e senha
 $usuario = new Usuario();
 $usuario->login("jose", "123");
 echo $usuario;
+*/
 
+/*
+//INSERE NO BANCO COM PROCEDURE E RETORNA OS VALORES
+$aluno = new Usuario();
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@luno");
+$aluno->insert();
+echo $aluno;
+*/
+$aluno1 = new Usuario("luizinho","@luno1");
+$aluno1->insert();
+echo $aluno1;
 
 ?>
