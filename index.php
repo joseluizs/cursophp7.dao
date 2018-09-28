@@ -46,8 +46,18 @@ $aluno->setDessenha("@luno");
 $aluno->insert();
 echo $aluno;
 */
+
+/*ISERT um novo usuario
 $aluno1 = new Usuario("luizinho","@luno1");
 $aluno1->insert();
 echo $aluno1;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(2);
+$usuario->update("professor", "!@#$%*");
+
+echo $usuario;
+
 
 ?>
