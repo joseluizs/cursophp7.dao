@@ -60,6 +60,8 @@ $usuario->update("professor", "!@#$%*");
 
 echo $usuario;
 */
+
+//Deletar um usuario
 $usuario = new Usuario();
 $usuario->loadById(2);
 $usuario->delete();
